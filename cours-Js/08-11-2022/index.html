@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8mb4">
+    <!-- 8mb4 gestion des emojis -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" async></script>
+    <title>Cours JS</title>
+</head>
+<body>
+    <section>
+        <div name="root" class="centrer">
+            <h1>Cours Js du 08/11/2022</h1>
+            <h3>Calculette vite fait</h3>
+            <div>
+                <label>No 1: </label>
+                <input id="num1" type="text">
+            </div>
+        
+            <div>
+                <label>No 2:</label>
+                <input id="num2" type="text">
+            </div>
+            <div>
+                <button onclick="calc()">Calculer</button>
+                <h2>Résultat</h2>
+                <h1 id="reponse"></h1>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1  class="centrer">Cours du 09/11/2022</h1>
+        <h3  class="centrer">Bonnes pratiques</h3>
+        <ul class="rouge">
+            <li>Commenter son code</li>
+            <li>Tester</li>
+            <li>Dry</li>
+            <li>kiss</li>
+            <li>SOLID</li>
+            <li>YAGNI (ne pas developper des fonctionnalités qui n'ont pas été demandés!!!)</li>
+        </ul>
+    
+    </section>
+    <br>
+    <section class="centrer">
+        <h1>Palindrome</h1>
+        <p class="justifier">declarer une fonction en js, ici la fonction "verifier". Dans cette fonction lui demander de recuperer la valeur de l'id "mot" en minuscule et de la stocké dans la valeur temporaire "motInverse" en la decoupant, l'inversant, et la recomposant. Pour finir la fonction compare "mot" et "motInverse". Si les valeurs sont identiques la fonction renvoie "C'est un palindrom" sinon elle renvoie "Ce n'est pas un palindrom".</p>
+        <input id="mot" type="text" placeholder="Veuillez saisir un mot">
+        <button onclick="verifier()">Verifier</button>
+        <h1>Réponse:</h1>
+        <p id="reponse1"></p>
+    </section>
+
+    
+</body>
+</html>
+

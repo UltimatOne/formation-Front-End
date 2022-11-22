@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>addEventListener</title>
+</head>
+<body>
+    <h1></h1>
+    <h2></h2>
+    <br>
+    <div></div>
+    <br>
+    <div id="parent">
+        Parent : <span id="parent-compteur">0</span>
+        <div id="enfant">
+            Enfant : <span id="enfant-compteur">0</span>
+            <button class="link">Clique-moi</button>
+        </div>
+        <input type="text" placeholder="les formulaires">
+        <br>
+        <br>
+        <label for="monSelect">votre language préféré: </label>
+        <select name="languages" id="monSelect">
+            <option value="JavaScript">JavaScript</option>
+            <option value="TypeScript">TypeScript</option>
+            <option value="Java">Java</option>
+        </select>
+    </div>
+    <div>
+        <h2>Inscrivez vous</h2>
+        <form>
+            <label for="nom">Nom: </label>
+            <input type="text" name="nom" id="nom">
+            <br>
+            <label for="prenom">Prénom: </label>
+            <input type="text" name="prenom" id="prenom">
+            <br>
+            <label for="email">Mail: </label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="password">Mot de passe: </label>
+            <input type="password" name="password" id="password">
+            <br>
+            <label for="password2">Confirmez le mot de passe: </label>
+            <input type="password" name="password2" id="password2">
+            <input type="submit" value="Soumettre" id="submit">
+        </form>
+        <div id="result">
+            
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

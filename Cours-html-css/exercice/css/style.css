@@ -1,0 +1,62 @@
+* body {
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+}
+header{
+    background-color: grey;
+    height: 10vh;
+    width: 100vw;
+}
+footer{
+    background-color: grey;
+    height: 10vh;
+    width: 100vw;
+}
+nav{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    background-color: grey;
+    height: 78vh;
+    width: 10vw;
+}
+.main{
+    display: flex;
+}
+section{
+ 
+    background-color: blueviolet;
+    height: 38vh;
+    width: 89vw;
+}
+article{
+    background-color: yellow;
+    height: 36vh;
+    width: 74vw;
+    margin: 1vh;
+}
+div{
+    background-color: aliceblue;
+
+}
+p{
+    background-color: grey;
+    height: 5vh;
+    width: 65vw;
+    margin: auto;
+}
+aside{
+    height: 36vh;
+    margin: 1vh;
+    background-color: red;
+    width: 15vw;
+}
+.section{
+    margin-top: 2vh;
+}
+.divSection{
+    display: block;
+    margin: 1vh;
+    height: 31vh;
+    width: 71vw;
+}
