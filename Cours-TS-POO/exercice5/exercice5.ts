@@ -1,7 +1,7 @@
 /**
- * fonction qui compare les chiffres (non défini au départ) dans un tableau "lePlusGrand"
+ * ompare les chiffres (non défini au départ) dans un tableau "lePlusGrand"
  * @param nbr tableau de chiffres indéfini
- * @returns retourn le chiffre le plus grand du tableau
+ * @returns retourne le chiffre le plus grand du tableau
  */
 
 
