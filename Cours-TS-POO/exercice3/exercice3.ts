@@ -11,4 +11,6 @@ function calc (pdv:number, pdf:number) :string {
 
     return result
 }
+const var3: string = calc(20, 10)
 console.log (calc(5, 10))
+console.log (var3)
