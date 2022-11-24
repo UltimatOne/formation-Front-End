@@ -1,0 +1,13 @@
+installation de typescript
+
+nodejs
+
+"npm -i -g typescript"
+
+activer l'utilisation des script dans powershell en mode admin:
+
+Set-ExecutionPolicy -ExecutionPolicy Bypass
+
+après la création d'un fichier typescript il faut le transoiler pour le fonctionnement
+
+"npm i -g ts-node"
