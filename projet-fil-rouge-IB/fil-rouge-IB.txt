@@ -1,0 +1,19 @@
+creation d'un site web qui permet de s'inscrire et de vendre ses services
+
+
+6 grandes features:
+
+1 module d'inscription
+
+2 module de recherche de prestation ou entreprise
+
+3 module de devis
+
+4 module de communication
+
+5 module d'evaluation de prestation
+
+6 module de monitoring
+
+le choix des outils de developpement est libre mais il vaux mieux utiliser ceux appris en formation
+
