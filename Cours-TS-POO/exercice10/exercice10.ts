@@ -14,4 +14,4 @@ function temperatureProcheDeZero(...temperatures: number[]): number{
     }
     return plusProcheDeZero;
 };
-console.log(temperaturePlusProcheDeZero(11, 82, 6, -8, -9, -8, -9, 18, -30))
+console.log(temperatureProcheDeZero(11, 82, 6, -8, -9, -8, -9, 18, -30))
