@@ -8,7 +8,7 @@ function pyramide(nombre: number){
     console.log(ligne + "*")
 
     for (let index = nombre + 1; index > 0; index--){
-    ligne = lignesunstring(0, index);
+    ligne = ligne.unstring(0, index);
     console.log(ligne);
     }
 }
