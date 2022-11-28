@@ -5,13 +5,13 @@
  */
 
 
-function lePlusGrand(...nbr:number[]):number{
+function lePlusGrand(...nombres:number[]):number{
     let max :number = 0;
-    for (let iterator = 0; iterator < nbr.length; iterator++){
-        if (nbr[iterator] > max){
-            max = nbr[iterator]
+    for (let iterator = 0; iterator < nombres.length; iterator++){
+        if (nombres[iterator] > max){
+            max = nombres[iterator]
         };
     }
-    return max
+    return max;
 }
-console.log (lePlusGrand(1, 150 , 55, 60, 300, 250, 500, 100))
+console.log (`Le chiffre le plus grand est ${lePlusGrand(1, 150 , 55, 60, 300, 250, 500, 100)}`)
