@@ -5,4 +5,6 @@ interface Aquatique {
     nager()
    }
 
-   export default Aquatique
+   export default interface Aquatique extends MilieuNaturel{
+    
+   }

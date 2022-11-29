@@ -1,11 +1,10 @@
-import Mammifere from './../Classes/Abstrait/Mammifere'
+export default interface Animal {
+    _nom: string;
+    _poids: number;
+    _dateNaissance: Date;
 
-interface Animal {
-    _nom: str
-    _poids: num
-    _dateNaissance: Date
-     display(): void
-    }
+    display(): void;
+}
 
-export default Animal;
+
     
