@@ -1,4 +1,1 @@
-interface MilieuNaturel {
-}
-
-export default MilieuNaturel
+export default interface MilieuNaturel {}
