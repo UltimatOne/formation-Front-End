@@ -1,13 +1,9 @@
-class Dice {
-    public _valeur: number;
+export default class Dice {
+    public valeur: number;
 
-    constructor(valeur: number){
-        this._valeur = valeur
-    }
-
-    Lancer(){
-
+    lancer(): number{
+        this.valeur = Math.floor(Math.random() * 6 ) + 1
+        return this.valeur
     }
 }
 
-export default Dice;
