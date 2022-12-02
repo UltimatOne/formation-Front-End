@@ -1,39 +1,53 @@
-import Gobelet from "./Gobelet";
+import Cup from "./Cup";
 
-export default class joueur {
-    protected _nom : string;
-    protected _score: number = 0;
+export default class Player {
+    private _name: string;
+    private _score: number = 0;
+    private _numberOfWinnedTurn: number = 0;
 
-    constructor(
-        nom: string, 
-        ){
-            this._nom = nom;
-        }
-    get nom(): string {
-        return this.nom
+    constructor(name: string) {
+        this._name = name;
     }
-    set nom(nouveauNom: string){
-        if (nouveauNom.trim().length > 0) {
-            this._nom = nouveauNom;
-          } else {
-            throw new Error("Le nom doit contenir au moins un caractère");
-          }
+
+    get name(): string {
+        return this._name;
     }
-    public get score(): number{
-        return this._score
+
+    get score(): number {
+        return this._score;
     }
-    public set score(nouveauScore: number){
-        this._score = nouveauScore
+
+    get numberOfWinnedTurn(): number {
+        return this._numberOfWinnedTurn;
     }
-    
 
+    /**
+     * Lance le gobelet, met à jour le score et affiche les résultats
+     * @param cup Gobelet de la partie
+     */
+    playTurn(cup: Cup) {
+        // Appelle la méthode rollAllDices du gobelet
+        cup.rollAllDices();
+        // Affecte le score du gobelet au joueur
+        this._score = cup.value;
+        // Appelle la méthode showPlayerScore pour afficher le score du joueur
+        this.showPlayerScore(cup);
+    }
 
+    /**
+     * Affiche le score du joueur et les valeurs des dés
+     * @param cup Gobelet de la partie
+     */
+    showPlayerScore(cup: Cup): void {
+        // Affiche l'attribut score du joueur en passant par le getter
+        console.log(`${this.name} Score: ${this.score} avec  [${cup.values}]`);
+    }
 
+    winTurn(): void {
+        this._numberOfWinnedTurn++;
+    }
 
-    jouer(gobelet: Gobelet) {
-        this.score = gobelet.lancer()
-    };
-    afficherScore(){
-        console.log(`Ce joueur à fait un score de ${this.score}`)
-    };
+    winGame(): void {
+        console.log(`${this.name} a gagné la partie avec ${this._numberOfWinnedTurn} tours gagnés !`);
+    }
 }
