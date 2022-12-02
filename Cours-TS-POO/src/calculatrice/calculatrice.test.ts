@@ -18,7 +18,7 @@ beforeAll(()=> {
 describe("Calculatrice", () => {
     describe("Additions", () => {
         interface("1 + 1", () => {
-            expect(calculatrice.calculer("1 + 1")).tobe(2)
+            expect(calculatrice.calculer("1 + 1")).toBe(2)
         });
     });
 });
