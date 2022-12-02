@@ -7,7 +7,7 @@
  */
 
 
-function compare(nbr1:number, nbr2:number, nbr3:number) :string{
+function compare(nbr1:number, nbr2:number, nbr3:number) :string {
     let result :string = "";
     if (nbr1 > nbr2 && nbr1 > nbr3){
         result = `Le plus grand nombre est ${nbr1}`
