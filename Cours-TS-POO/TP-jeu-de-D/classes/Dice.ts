@@ -1,9 +1,14 @@
 export default class Dice {
-    public valeur: number;
+    private _value: number = 1;
 
-    lancer(): number{
-        this.valeur = Math.floor(Math.random() * 6 ) + 1
-        return this.valeur
+    public get value(): number {
+        return this._value;
+    }
+
+    /**
+     * Retourne une valeur aléatoire entre 1 et 6
+     */
+    public roll(): void {
+        this._value = Math.floor(Math.random() * 6) + 1;
     }
 }
-
