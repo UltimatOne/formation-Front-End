@@ -1,0 +1,15 @@
+Bonjour,
+
+Je m'appelle Jean-Jacques, j'ai 43 ans et j'ai une très forte appétence pour l'informatique depuis tout petit.
+Je suis fan de tout dans ce domaine, aussi bien hardware que software.
+
+j'ai un diplome de technicien de maintenance informatique, mais j'ai travaillé pendant 15 ans dans le commerce. D'abord au service après-vente, où j'aidais
+les clients a résoudre leurs problèmes avec leurs produits et ensuite en tant que vendeur produits techniques où je proposais des solutions pertinentes aux besoins des clients
+en bénéfice pour l'entreprise.
+
+je suis maintenant développeur front end mobile et web. Je pratique JavaScript, html, css, ainsi que les librairies et framworks comme bootstrap et react.
+
+je suis motivé à atteindre le niveau FullStack a moyen terme par le travail personnel et par le biais de formations externes et, ou par formations internes d'une entreprise qui 
+m'emploiera d'abord en tant que developpeur Front End.
+
+set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
