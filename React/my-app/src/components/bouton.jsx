@@ -1,5 +1,7 @@
-export default function Bouton({clique}){
+
+
+export default function Bouton( { active, change }){
     return (
-        <button onClick={clique}>check</button>
+        <button onClick={change} className={active ? "green" : "red"}>{active ? "on" : "off"}</button>
     )
 }

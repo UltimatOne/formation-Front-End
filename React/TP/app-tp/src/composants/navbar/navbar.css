@@ -1,0 +1,8 @@
+.styleNavbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    height: 5em;
+    width: 100%;
+}

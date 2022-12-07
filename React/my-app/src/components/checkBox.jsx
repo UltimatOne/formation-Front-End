@@ -1,7 +1,7 @@
-export default function CheckBox({etat}){
+import React from "react";
+
+export default function CheckBox({active, change}){
     return (
-        <>
-        {etat ? <input type="checkbox" checked/> : <input type="checkbox" />}
-        </>
+ <input type="checkbox" checked={active} onChange={change}/>
     )
 }
