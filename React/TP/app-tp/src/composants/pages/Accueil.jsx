@@ -1,5 +1,3 @@
-import accueil from './accueil.png'
-
 function Accueil(){
     return (
      <div id="Accueil">
