@@ -25,8 +25,8 @@ export default function Carte(props) {
         {props.button ? <button onClick= {clickP}>+ 1</button>: <button onClick={clickM}>- 1</button>}
         {props.button ? <button onClick= {clickM}>- 1</button>: <button onClick={clickP}>+ 1</button>}
 
-        <Bouton active={on} change={change}/>
         <CheckBox active={on} change={change}/>
+        <Bouton active={on} change={change}/>
       </div>
     </div>
   );

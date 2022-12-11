@@ -9,7 +9,7 @@ function Contact({nom, prenom, mail, tel}) {
       <br />
       {tel}
     </h4>
-    <button>Supprimer</button>
+    <button placeholder="Supprimer">Supprimer</button>
   </div>
   );
 }

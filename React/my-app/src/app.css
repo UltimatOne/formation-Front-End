@@ -22,8 +22,10 @@ button{
     color: green;
 }
 .red{
+    color: white;
     background-color: red;
 }
-.green{
-    background-color: green;
+.dark{
+    color: white;
+    background-color: black;
 }
