@@ -1,11 +1,14 @@
-
+import Footer from "./composants/footer/footer";
+import Navbar from "./composants/navbar/navbar";
 import Bonjour from "./fonctions/bonjour";
 
 function App() {
   
     return (
     <>
-      <Bonjour nom="Ultimat" prenom=" Le Boss"/>
+        <Navbar />
+        <Bonjour pseudo="Ultimat" titre=" Le Challenger"/>
+        <Footer />
     </>
       );
     }

@@ -1,6 +1,6 @@
 import "./bonjour.css";
 
-function Bonjour(props){
-    return <h1>Bonjour {props.nom}!!!</h1>;
+function Bonjour({nom, prenom, pseudo, titre}){
+    return <h1>Bonjour {[pseudo, titre]}!!!</h1>;
 }
 export default Bonjour;
