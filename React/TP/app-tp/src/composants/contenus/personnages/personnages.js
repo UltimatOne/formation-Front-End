@@ -8,7 +8,7 @@ export const personnages = [
     {
         nom: "Vegeta",
         classeDeCombat: 250000,
-        type: "Méchant devenu gentil",
+        type: "Gentil",
         sexe: "Masculin"
     },
     {

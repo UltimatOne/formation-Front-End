@@ -1,6 +1,9 @@
-export default function Accueil(){
+import accueil from './accueil.png'
+
+function Accueil(){
     return (
      <div id="Accueil">
-         <h1>Accueil</h1>
+         <h1>Acceuil</h1>
      </div>
  )};
+ export default Accueil;

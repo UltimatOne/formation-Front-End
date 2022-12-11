@@ -17,7 +17,6 @@ function App() {
       <Route path="/contenu1" element={<Contenu1 />}/>
       <Route path="/contenu2" element={<Contenu2 />}/>
       <Route path="/contenu3" element={<Contenu3 />}/>
-      
     </Routes>
     </>
   );

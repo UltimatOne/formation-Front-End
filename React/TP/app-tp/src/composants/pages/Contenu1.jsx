@@ -3,7 +3,7 @@ import Saiyans from "../contenus/saiyans"
 
 export default function Contenu1(){
    return (
-    <div id="test1">
+    <div>
         {personnages.map((personnage) => (
         <Saiyans {...personnage} />
       ))}

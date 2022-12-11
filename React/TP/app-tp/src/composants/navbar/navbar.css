@@ -1,8 +1,12 @@
 .styleNavbar{
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: black;
     color: white;
-    height: 5em;
+    height: 3em;
     width: 100%;
+}
+#Maison{
+    width: 20%;
 }
