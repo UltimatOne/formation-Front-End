@@ -1,4 +1,4 @@
-import logo from "./../logo/logo-netfloox.png";
+import logo from "./logo-netfloox.png";
 import "./navbar.css";
 export default function Navbar(){
    return (
