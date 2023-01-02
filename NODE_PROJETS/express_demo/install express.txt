@@ -1,0 +1,16 @@
+npm init
+tsc --init
+npm i express
+npm i @types/express
+npm i @types/node
+npm i dotenv
+npm i ts-node-dev
+
+a mettre dans package.json :
+
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node ./dist/app.js",
+    "build": "tsc",
+    "start:dev": "ts-node-dev ./src/apps"
+    },
