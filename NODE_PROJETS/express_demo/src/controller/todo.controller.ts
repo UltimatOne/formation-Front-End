@@ -11,4 +11,9 @@ export default class TodoController {
     getAll = (req: Request, res: Response): void => {
         res.send(this.service.getAll())
     }
+    getById = (req: Request, res: Response): void => {
+        const id = req.params.id
+        const data = this.service.getById1(+id)
+        res.send(data)
+    }
 }
