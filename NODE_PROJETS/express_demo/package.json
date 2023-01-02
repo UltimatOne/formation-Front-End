@@ -7,8 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsc && node ./dist/app.js",
     "build": "tsc",
-    "start:dev": "ts-node-dev ./src/apps"
+    "start:dev": "ts-node-dev ./src/app"
   },
+
   "author": "jjg",
   "license": "ISC",
   "dependencies": {
