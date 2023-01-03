@@ -9,8 +9,9 @@ const controller = new TodoController(service)
 
 
 const router = express.Router()
-router.get("/", controller.getAll)
-router.get("/:id", controller.getById)
-router.get("/:id", service.getId)
+router.get("/", controller.getAll) //localhost:3001
+router.get("/:id", controller.getById) //localhost:3001/2
+router.delete("/:id", controller.deleteById)
+
 
 export default router;

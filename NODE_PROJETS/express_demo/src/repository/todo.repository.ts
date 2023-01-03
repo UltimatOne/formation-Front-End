@@ -11,4 +11,5 @@ export default class TodoRepository {
     getAll = (): TodoModel[] => {
         return this.todos;
     }
+
 }

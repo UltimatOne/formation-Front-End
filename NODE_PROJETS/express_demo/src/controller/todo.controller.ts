@@ -13,7 +13,12 @@ export default class TodoController {
     }
     getById = (req: Request, res: Response): void => {
         const id = req.params.id
-        const data = this.service.getById1(+id)
+        const data = this.service.getById(+id)
         res.send(data)
+    }
+    deleteById = (req: Request, res: Response): void => {
+        const id = req.params.id
+        const data = this.service.deleteById(+id)
+        res.sendStatus(200)
     }
 }

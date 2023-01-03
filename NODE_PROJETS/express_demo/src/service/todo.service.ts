@@ -10,12 +10,23 @@ export default class TodoService {
         return this.repo.getAll()
     }
 
-    getById1 = (id: number):TodoModel =>{
+    getById = (id: number):TodoModel =>{
         const resu = this.repo.getAll().find(item => item.id == id)
         if (!resu) throw "id non trouvée"
         return resu;
     }
-/*getById3 = (id: number) => {
+    deleteById = (id: number): void => {
+        const todos = this.repo.getAll()    
+        const index = todos.findIndex(item => item.id == id)  
+        if (index < 0) throw "id non trouvée"
+        todos.splice(index, 1)
+    }
+    createElement = ({
+        "nom": "value"
+    })
+}
+        
+    /*getById3 = (id: number) => {
     let result;
     this.repo.getAll().forEach(element =>{
         if (element.id === id){
@@ -27,4 +38,3 @@ export default class TodoService {
     }
     return result;
 }*/
-}

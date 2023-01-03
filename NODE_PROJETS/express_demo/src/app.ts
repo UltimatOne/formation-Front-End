@@ -8,6 +8,7 @@ const app = express();
 //utilisation d'une variable d'environnement
 const port = process.env.PORT
 
+app.use(express.json())
 //instance du routeur de express ayant une route todo
 app.use("/todo", router);
 
