@@ -67,7 +67,7 @@ export default class TodoService {
     }
     patch = (id: number, item: Partial<IPatch>): TodoModel => {
         const index = this.getAll().findIndex(data => data.id == id)
-        if(index != undefined) throw "id inconnue"
+        if(index == -1) throw "id inconnue"
         const data = this.repo.patch(index, item)
         return data
     }

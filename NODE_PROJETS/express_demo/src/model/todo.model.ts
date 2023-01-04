@@ -40,6 +40,7 @@ class TodoModel {
     }
     patch = (data: Partial<IPatch>) => {
         if (data.task) this.task = data.task
+        if (data.completed != this.completed) this.completed= data.completed
     }
 }
 export {IPatch, TodoModel}
