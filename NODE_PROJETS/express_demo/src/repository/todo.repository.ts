@@ -2,8 +2,8 @@ import TodoModel from "../model/todo.model";
 
 export default class TodoRepository {
 
-    todos: TodoModel[] = [
-        new TodoModel("decuver"),
+    private todos: TodoModel[] = [
+        new TodoModel("Decuver"),
         new TodoModel("Aller bosser"),
         new TodoModel("Se reveiller")
     ]
@@ -12,4 +12,20 @@ export default class TodoRepository {
         return this.todos;
     }
 
+    deleteById = (id: number): void => {
+        this.todos = this.todos.filter(item => item.id != id)
+
+    }
+
+    deleteById2 = (index: number) => {
+        this.todos.splice(index, 1)
+    }
+    createTodo = (item: TodoModel): void => {
+      this.todos.push(item)
+        
+    }
+    update = (item: TodoModel, index: number): void => {
+        this.todos[index] = item
+    }
+    
 }

@@ -1,14 +1,32 @@
+// définition du model de données
 export default class TodoModel {
-    id: number
-    task: string
-    completed : boolean
+    id?: number
+    task?: string
+    completed?: boolean
     static count: number = 1;
 
-    constructor(task: string) {
+    constructor(...data:any[]) {
+        const [obj] = data
+
+        if(typeof(obj) == "string") {
         this.id = TodoModel.count;
-        this.task = task;
-        this.completed = false;
+        this.task = obj 
+        this.completed = false
         TodoModel.count ++
-        
+        } else if(Object.keys(obj).length == 2) {
+            this.id = TodoModel.count;
+            ({task: this.task, completed: this.completed} = obj)
+            /** ce qui équivaut à:
+            this.task = obj.task
+            this.completed = obj.completed
+            */
+            TodoModel.count++
+        } else if(Object.keys(obj).length == 3) {
+            ({id: this.id, task: this.task, completed: this.completed} = obj)
+        } else {
+            throw "erreur lors de la mise à jour"
+        }
     }
+    
 }
+
