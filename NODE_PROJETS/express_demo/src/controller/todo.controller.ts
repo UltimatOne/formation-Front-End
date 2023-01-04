@@ -41,5 +41,11 @@ export default class TodoController {
         const data = this.service.updateTodo(body, +id)
         res.send(data)
     }
+    patch = (req:Request, res:Response) => {
+        const id = req.params.id
+        const body =  req.body
+        const data = this.service.patch(+id, body)
+        res.send(data)
+    }
 }
 

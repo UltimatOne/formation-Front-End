@@ -1,4 +1,4 @@
-import TodoModel from "../model/todo.model"
+import {IPatch, TodoModel} from "../model/todo.model"
 import TodoRepository from "../repository/todo.repository"
 
 export default class TodoService {
@@ -64,5 +64,11 @@ export default class TodoService {
             this.repo.update(todo, index)
             return todo
         }
+    }
+    patch = (id: number, item: Partial<IPatch>): TodoModel => {
+        const index = this.getAll().findIndex(data => data.id == id)
+        if(index != undefined) throw "id inconnue"
+        const data = this.repo.patch(index, item)
+        return data
     }
 }

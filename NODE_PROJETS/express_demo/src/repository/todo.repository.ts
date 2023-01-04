@@ -1,4 +1,4 @@
-import TodoModel from "../model/todo.model";
+import {IPatch, TodoModel} from "../model/todo.model";
 
 export default class TodoRepository {
 
@@ -27,5 +27,8 @@ export default class TodoRepository {
     update = (item: TodoModel, index: number): void => {
         this.todos[index] = item
     }
-    
+    patch = (index: number, item: Partial<IPatch>): TodoModel => {
+        this.todos[index].patch(item)
+        return this.todos[index]
+    }
 }

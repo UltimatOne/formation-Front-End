@@ -1,5 +1,10 @@
+
+interface IPatch{
+    task: string
+    completed: boolean
+}
 // définition du model de données
-export default class TodoModel {
+class TodoModel {
     id?: number
     task?: string
     completed?: boolean
@@ -13,7 +18,9 @@ export default class TodoModel {
         this.task = obj 
         this.completed = false
         TodoModel.count ++
-        } else if(Object.keys(obj).length == 2) {
+        } 
+        
+        else if(Object.keys(obj).length == 2) {
             this.id = TodoModel.count;
             ({task: this.task, completed: this.completed} = obj)
             /** ce qui équivaut à:
@@ -21,12 +28,19 @@ export default class TodoModel {
             this.completed = obj.completed
             */
             TodoModel.count++
-        } else if(Object.keys(obj).length == 3) {
+        } 
+        
+        else if(Object.keys(obj).length == 3) {
             ({id: this.id, task: this.task, completed: this.completed} = obj)
-        } else {
+        } 
+        
+        else {
             throw "erreur lors de la mise à jour"
         }
     }
-    
+    patch = (data: Partial<IPatch>) => {
+        if (data.task) this.task = data.task
+    }
 }
+export {IPatch, TodoModel}
 
