@@ -1,4 +1,4 @@
-import {TodoModel, IPatch } from "../model/todo.model";
+import { TodoModel, IPatch } from "../model/todo.model";
 
 export default class TodoRepository {
 
@@ -20,7 +20,7 @@ export default class TodoRepository {
         this.todos.splice(index, 1)
     }
 
-    createTodo =(item: TodoModel): void => {
+    createTodo = (item: TodoModel): void => {
         this.todos.push(item)
     }
 
@@ -32,5 +32,5 @@ export default class TodoRepository {
         this.todos[index].patch(item)
         return this.todos[index]
     }
-    
+
 }

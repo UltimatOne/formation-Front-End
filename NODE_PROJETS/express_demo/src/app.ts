@@ -5,6 +5,8 @@ import "dotenv/config"
 // instance de express
 const app = express();
 
+app.use(express.json())
+
 // utilisation d'une variable d'environnement
 const port = process.env.PORT
 
