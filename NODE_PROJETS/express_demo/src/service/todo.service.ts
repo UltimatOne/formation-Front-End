@@ -45,16 +45,18 @@ export default class TodoService {
         const index = this.getAll().findIndex(item => item.id == id)
         this.repo.deleteById2(index)
     }
-    createTodo = (task: string):TodoModel => {
-        if(!task) throw "il manque un paramètre"
+
+    createTodo = (task: string): TodoModel => {
+        if(!task) throw "il manque un parametre"
         const newTodo = new TodoModel(task)
         this.repo.createTodo(newTodo)
         return newTodo
     }
+
     updateTodo = (item: TodoModel, id: number): TodoModel => {
         if(item.id != id) throw "todo incorrecte"
         const exist = this.getAll().find(data => data.id == item.id)
-        if(!exist){
+        if(!exist) {
             const todo = new TodoModel(item.task, item.completed);
             this.repo.createTodo(todo)
             return todo;
@@ -62,13 +64,17 @@ export default class TodoService {
             const todo = new TodoModel(item)
             const index = this.getAll().findIndex(item => item.id == todo.id)
             this.repo.update(todo, index)
-            return todo
+            return todo;
         }
     }
+
     patch = (id: number, item: Partial<IPatch>): TodoModel => {
-        const index = this.getAll().findIndex(data => data.id == id)
+        const index = this.repo.getAll().findIndex(data => data.id == id)
+        
         if(index == -1) throw "id inconnue"
-        const data = this.repo.patch(index, item)
+        const data = this.repo.patch(index,item)
         return data
     }
+
+    
 }
