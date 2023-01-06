@@ -45,7 +45,7 @@ export default class TodoController {
     /* The above code is updating the todo item. */
     update = async (req: Request, res: Response): Promise<void> => {
         const id = req.params.id
-        const body = req.body.task
+        const body = req.body
         try {
             const data = await this.service.updateTodo(body, +id)
             res.send(data)
