@@ -36,7 +36,6 @@ export default class TodoController {
 
     /* Creating a new todo item. */
     create = async (req: Request, res: Response): Promise<void> => {
-        console.log(req.body)
         const task = req.body.task
         const todo = await this.service.createTodo(task)
         res.send(todo)
@@ -54,10 +53,10 @@ export default class TodoController {
         }
     }
 
-    //     patch  = (req:Request, res: Response) => {
-    //         const id = req.params.id
-    //         const body = req.body
-    //         const data = this.service.patch(+id, body)
-    //         res.send(data)
-    //     }
+    patch  = async (req:Request, res: Response) => {
+        const id = req.params.id
+        const body = req.body
+        const data = await this.service.patchTodo(+id, body)
+        res.send(data)
+    }
 }

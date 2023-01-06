@@ -19,6 +19,6 @@ router.get("/:id", controller.getById) // localhost:3001/2
 router.delete("/:id", controller.deleteById)
 router.post("/", controller.create)
 router.put("/:id", controller.update)
-// router.patch("/:id", controller.patch)
+router.patch("/:id", controller.patch)
 export default router;
 
