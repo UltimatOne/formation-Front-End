@@ -1,0 +1,4 @@
+<ul *ngFor="let liste of listes">
+    <!-- ngif affichera que les composants de la liste qui contiennent un "a" dans la configuration ci-dessous -->
+    <li *ngIf="liste.includes('a')">{{liste}}</li>
+</ul>
