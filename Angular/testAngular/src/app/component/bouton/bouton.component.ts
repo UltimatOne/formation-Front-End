@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./bouton.component.scss']
 })
 export class BoutonComponent {
-
+  title: string = "Je suis un bouton";
 }
