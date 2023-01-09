@@ -1,0 +1,29 @@
+Prérequis:
+
+installation du pâckage complet:
+
+npm install -g @angular/cli
+
+ou
+
+npm i -g @angular/cli
+
+vérification de la version:
+
+ng version
+
+créer un projet:
+
+ng new nom_du_projet
+
+pendant la création de l'app:
+Would you like to add Angular routing? (y/N) y
+Which stylesheet format would you like to use? scss
+
+pour lancer l'app:
+
+ng serve -o (-o pour que ca s'ouvre dans le navigateur automatiquement)
+
+pour generer un composant c'est en ligne de commande
+
+ex: ng g c <nom_du_composant>
