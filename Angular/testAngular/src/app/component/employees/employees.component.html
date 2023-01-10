@@ -5,9 +5,11 @@
         <div *ngIf="isOdd">
             <div>
                 {{ today | date:"dd/MM/yyyy"}}
-                {{employee.company.nom}}
-
+                <br>
+                <br>
+                {{employee.company.name | uppercase}}
                 <div>
+                    <br>
                     <div>
                         {{employee.name | uppercase}}
                     </div>
