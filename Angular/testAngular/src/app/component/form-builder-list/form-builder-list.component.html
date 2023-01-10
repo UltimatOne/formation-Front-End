@@ -1,0 +1,21 @@
+<div>
+    <ul *ngFor="let article of articles">
+        <li>{{article.designation}}:{{article.prix}} €</li>
+    </ul>
+</div>
+<form [formGroup]="article" (ngSubmit)="onSubmit()">
+    <label>Désignation:</label>
+    <br>
+        <input type="text" formControlName="designation">
+        <span *ngIf="submitted && !form['designation'].valid">* Nom Invalide</span>
+        <br>
+        <br>
+    <label>Prix:</label>
+    <br>
+        <input type="number" formControlName="prix">
+        <span *ngIf="submitted && !form['prix'].valid">* Prix Invalide</span>
+        <br>
+        <br>
+        <button type="submit">Ajouter</button>
+    </form>
+    <p>total: {{totalPrice}} €</p>

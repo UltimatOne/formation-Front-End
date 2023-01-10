@@ -19,6 +19,7 @@ import { AffichageHorlogeComponent } from './component/affichage-horloge/afficha
 import { HeureComponent } from './component/heure/heure.component';
 import { ListeCoursesComponent } from './component/liste-courses/liste-courses.component';
 import { ReactivListCoursesComponent } from './component/reactiv-list-courses/reactiv-list-courses.component';
+import { FormBuilderListComponent } from './component/form-builder-list/form-builder-list.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ReactivListCoursesComponent } from './component/reactiv-list-courses/re
     AffichageHorlogeComponent,
     HeureComponent,
     ListeCoursesComponent,
-    ReactivListCoursesComponent
+    ReactivListCoursesComponent,
+    FormBuilderListComponent
   ],
   imports: [
     BrowserModule,
