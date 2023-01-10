@@ -1,0 +1,7 @@
+<ul *ngFor="let article of articles">
+    <li>{{article}}</li>
+</ul>
+<form (ngSubmit)="addArticle()">
+    <input type="text" name="newArticle" [(ngModel)]="newArticle">
+    <button type="submit">Valider</button>
+</form>

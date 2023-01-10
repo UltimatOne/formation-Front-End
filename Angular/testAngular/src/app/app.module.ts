@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BoutonComponent } from './component/bouton/bouton.component';
 import { UsersComponent } from './component/users/users.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AlertBoutonComponent } from './component/alert-bouton/alert-bouton.component';
 import { ListeComponent } from './component/liste/liste.component';
 import { MagieComponent } from './component/magie/magie.component';
@@ -13,6 +13,12 @@ import { ListeFiltreComponent } from './component/liste-filtre/liste-filtre.comp
 import { CartesDeVisitesComponent } from './component/cartes-de-visites/cartes-de-visites.component';
 import { EmployeesComponent } from './component/employees/employees.component';
 import { HiddenComponent } from './component/hidden/hidden.component';
+import { BoutonGeneriqueComponent } from './component/bouton-generique/bouton-generique.component';
+import { BoutonMenuComponent } from './component/bouton-menu/bouton-menu.component';
+import { AffichageHorlogeComponent } from './component/affichage-horloge/affichage-horloge.component';
+import { HeureComponent } from './component/heure/heure.component';
+import { ListeCoursesComponent } from './component/liste-courses/liste-courses.component';
+import { ReactivListCoursesComponent } from './component/reactiv-list-courses/reactiv-list-courses.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +31,19 @@ import { HiddenComponent } from './component/hidden/hidden.component';
     ListeFiltreComponent,
     CartesDeVisitesComponent,
     EmployeesComponent,
-    HiddenComponent
+    HiddenComponent,
+    BoutonGeneriqueComponent,
+    BoutonMenuComponent,
+    AffichageHorlogeComponent,
+    HeureComponent,
+    ListeCoursesComponent,
+    ReactivListCoursesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AlertBoutonComponent {
   totoQuiClick(){
-    alert("J'ai tout pété !!!!!!!")
+    alert("Tu as tout cassé !!!!!!!")
   }
 }
