@@ -21,6 +21,11 @@ import { ListeCoursesComponent } from './component/liste-courses/liste-courses.c
 import { ReactivListCoursesComponent } from './component/reactiv-list-courses/reactiv-list-courses.component';
 import { FormBuilderListComponent } from './component/form-builder-list/form-builder-list.component';
 import { UserFormComponent } from './component/user-form/user-form.component';
+import { DataCoursesComponent } from './component/output/data-courses/data-courses.component';
+import { FormCoursesComponent } from './component/output/form-courses/form-courses.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSliderModule} from '@angular/material/slider';
+
 
 @NgModule({
   declarations: [
@@ -41,13 +46,17 @@ import { UserFormComponent } from './component/user-form/user-form.component';
     ListeCoursesComponent,
     ReactivListCoursesComponent,
     FormBuilderListComponent,
-    UserFormComponent
+    UserFormComponent,
+    DataCoursesComponent,
+    FormCoursesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

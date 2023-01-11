@@ -1,0 +1,7 @@
+<div class="'container">
+    <h2> {{product.nom | slice: 0:18}} </h2>
+    <span *ngIf="product.nom.length > 18">...</span>
+    <p>{{product.artist}}</p>
+    <p>{{product.real}}</p>
+    <img *ngIf="!product.img" src="https://st4.depositphotos.com/1036149/21104/i/600/depositphotos_211045652-stock-photo-fun-unicorn-3d-illustration.jpg" alt="licorne">
+</div>

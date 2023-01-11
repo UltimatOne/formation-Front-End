@@ -26,4 +26,6 @@ ng serve -o (-o pour que ca s'ouvre dans le navigateur automatiquement)
 
 pour generer un composant c'est en ligne de commande
 
-ex: ng g c <nom_du_composant>
+ex: ng g c component/nom_du_composant
+
+<router-outlet></router-outlet> est une balise importante à ne pas oublier de mettre dans app.component.html

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "testAngular": {
+    "Mediatheque": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/test-angular",
+            "outputPath": "dist/mediatheque",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -30,7 +30,6 @@
               "src/assets"
             ],
             "styles": [
-              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -66,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "testAngular:build:production"
+              "browserTarget": "Mediatheque:build:production"
             },
             "development": {
-              "browserTarget": "testAngular:build:development"
+              "browserTarget": "Mediatheque:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -77,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "testAngular:build"
+            "browserTarget": "Mediatheque:build"
           }
         },
         "test": {
@@ -94,7 +93,6 @@
               "src/assets"
             ],
             "styles": [
-              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -104,6 +102,6 @@
     }
   },
   "cli": {
-    "analytics": "57dd28be-3abc-4094-b78d-c98d08cbdd1e"
+    "analytics": "5b63600e-5a47-4fa0-9b0a-28aa4382253d"
   }
 }
