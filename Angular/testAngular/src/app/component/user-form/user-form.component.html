@@ -1,0 +1,106 @@
+<div class="container" *ngFor="let user of users">
+    <div class="background">
+      <div class="card-header">
+        {{ user.entreprise }}
+        <div class="card">
+          <div class="name">{{ user.prenom }} {{ user.nom }}</div>
+          <div class="info">
+            <p>email: {{ user.email }}</p>
+            <p *ngFor="let telephone of user.telephones">Tel: {{ telephone }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div>
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="nom">Nom: </label>
+        <input
+          type="text"
+          id="nom"
+          formControlName="nom"
+          placeholder="Votre nom"
+        />
+        <span *ngIf="submitted && form['nom'].invalid">
+          <span *ngIf="form['nom'].hasError('minlength')">
+            * Le nom doit contenir au moins 2 caractères
+          </span>
+          <span *ngIf="!form['nom'].value"> * Nom obligatoire </span>
+        </span>
+      </div>
+      <div>
+        <label for="prenom">Prenom: </label>
+        <input
+          type="text"
+          id="prenom"
+          formControlName="prenom"
+          placeholder="Votre prenom"
+        />
+        <span *ngIf="submitted && form['prenom'].invalid">
+          <span *ngIf="form['prenom'].hasError('minlength')">
+            * Le prenom doit contenir au moins 2 caractères
+          </span>
+          <span *ngIf="!form['prenom'].value"> * Prenom obligatoire </span>
+        </span>
+      </div>
+      <div>
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          id="email"
+          formControlName="email"
+          placeholder="Votre email"
+        />
+        <span *ngIf="submitted && form['email'].invalid">
+          <span *ngIf="form['email'].hasError('minlength')">
+            * Email invalide
+          </span>
+          <span *ngIf="!form['email'].value"> * Email obligatoire </span>
+        </span>
+      </div>
+      <div>
+        <label for="entreprise">Entreprise: </label>
+        <input
+          type="text"
+          id="entreprise"
+          formControlName="entreprise"
+          placeholder="Votre entreprise"
+        />
+        <span *ngIf="submitted && form['entreprise'].invalid">
+          <span *ngIf="form['entreprise'].hasError('minlength')">
+            * Le prenom doit contenir au moins 2 caractères
+          </span>
+          <span *ngIf="!form['entreprise'].value">*Entreprise obligatoire</span>
+        </span>
+      </div>
+      <div formArrayName="telephones">
+        <div *ngFor="let telephone of telephones.controls; let i = index">
+          <label for="telephone">Téléphone</label>
+          <input
+            type="tel"
+            id="tel"
+            [formControlName]="i"
+            placeholder="telephone"
+          />
+          <span *ngIf="submitted && telephone.invalid">
+            <span *ngIf="telephone.hasError('minlength')">
+              * Telephone doit contenir au moins 10 caractères
+            </span>
+            <span *ngIf="!telephone.value"> * Telephone obligatoire </span>
+          </span>
+        </div>
+        <button type="button" (click)="addTelephone()">+</button>
+        <button
+          *ngIf="telephones.length > 1"
+          type="button"
+          (click)="removeTelephone()"
+        >
+          -
+        </button>
+      </div>
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+  

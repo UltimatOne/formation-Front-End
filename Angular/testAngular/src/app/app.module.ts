@@ -20,6 +20,7 @@ import { HeureComponent } from './component/heure/heure.component';
 import { ListeCoursesComponent } from './component/liste-courses/liste-courses.component';
 import { ReactivListCoursesComponent } from './component/reactiv-list-courses/reactiv-list-courses.component';
 import { FormBuilderListComponent } from './component/form-builder-list/form-builder-list.component';
+import { UserFormComponent } from './component/user-form/user-form.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { FormBuilderListComponent } from './component/form-builder-list/form-bui
     HeureComponent,
     ListeCoursesComponent,
     ReactivListCoursesComponent,
-    FormBuilderListComponent
+    FormBuilderListComponent,
+    UserFormComponent
   ],
   imports: [
     BrowserModule,

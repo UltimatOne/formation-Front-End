@@ -9,7 +9,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class FormBuilderListComponent {
   article: FormGroup = this.formBuilder.group({
     designation: ["", Validators.required],
-    prix: ["",Validators.required],
+    prix: ['', Validators.required],
   })
   submitted: boolean = false
   articles: any[] = []
