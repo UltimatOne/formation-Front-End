@@ -1,4 +1,4 @@
-import Heros from "../models/heros";
+import Heros from "../models/superHeros";
 const SuperHerosList:Heros[] = [
     {
       id: 1,

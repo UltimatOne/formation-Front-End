@@ -1,26 +1,25 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import SuperHeros from "../../models/superHeros";
 
 
 type CardProps = {
-  id: number;
-  name: string;
-  image: string;
-  civil: string;
-  age: number;
-  ville: string;
+  superHeros: SuperHeros
 };
 
-const Card: React.FC<CardProps> = ({ id, name, image, civil, age, ville }) => {
+const Card: React.FC<CardProps> = ({ superHeros }) => {
   return (
+    <Link to={`/${superHeros.id}`}>
     <div className="card">
+      <img src={superHeros.image} alt={superHeros.name} />
       <h1>
-        {id}. {name}, de son vrai nom {civil}.
+        {superHeros.id}. {superHeros.name}, de son vrai nom {superHeros.civil}.
       </h1>
       <h2>
-        Habite à {ville} et est âgé de {age}ans.
+        Habite à {superHeros.ville} et est âgé de {superHeros.age}ans.
       </h2>
-      <img src={image} alt={name} />
     </div>
+    </Link>
   );
 };
 

@@ -1,6 +1,11 @@
 import { RouteObject, useRoutes } from "react-router-dom";
-import Count from "../count/count";
-import HerosListe from "../pages/herosListe";
+import Get from "../Fetch/Get";
+import GetId from "../Fetch/GetId";
+import HerosDetails from "../../pages/herosDetails";
+import HerosListe from "../../pages/herosListe";
+import HerosEdit from "../../pages/herosEdit";
+
+
 
 const Router: React.FC = () =>{
 const routes: RouteObject[] = [
@@ -9,9 +14,21 @@ const routes: RouteObject[] = [
         element: <HerosListe/>
     },
     {
-        path: "/count",
-        element: <Count />
+        path: "/:id",
+        element: <HerosDetails />
     },
+    {
+        path: "/fetch",
+        element: <Get/>
+    },
+    {
+        path: "/users/:id",
+        element: <GetId/>
+    },
+    {
+        path: "/edit/:id",
+        element: <HerosEdit/>
+    }
 ];
 
 
