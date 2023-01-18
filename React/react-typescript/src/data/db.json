@@ -2,11 +2,11 @@
   "superHeros": [
     {
       "id": 1,
-      "name": "Batman",
       "image": "https://www.superherodb.com/gallery2/075/395/39568.webp",
       "civil": "Bruce Wayne",
       "age": 35,
-      "ville": "Gotham City"
+      "ville": "Gotham City",
+      "name": "Batman "
     },
     {
       "id": 2,
@@ -23,6 +23,14 @@
       "civil": "Hal Jordan",
       "age": 30,
       "ville": "Coast City"
+    },
+    {
+      "id": 4,
+      "name": "WonderWoman",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/050/12529.jpg?v=1619124914",
+      "civil": "princesse Diana",
+      "age": "300",
+      "ville": "Themyscira"
     }
   ]
 }

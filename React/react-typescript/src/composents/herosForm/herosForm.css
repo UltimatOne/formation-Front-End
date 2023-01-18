@@ -1,0 +1,22 @@
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    
+}
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    margin-top: 2%;
+    border-style: solid;
+    padding: 1%;
+    text-align: left;
+}
+.bouton{
+    width: 15%;
+    margin: auto;
+    margin-top: 2%;
+    background-color: black;
+    color: white;
+}

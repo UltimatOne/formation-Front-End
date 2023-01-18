@@ -1,16 +1,15 @@
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import SuperHeros from "../models/superHeros";
+import HeroService from "../services/heroService";
 
 const HerosDetails: React.FC = () => {
     const [herosDetails, setHerosDetails] = useState<SuperHeros>()
     const {id} = useParams<string>();
     useEffect(() => {
-        fetch(`http://localhost:8000/superHeros/${id}`)
-        .then((response) => response.json())
-        .then((data) => {
-            setHerosDetails(data);
-        });
+        if (id){
+        HeroService.getHeros(+id).then((data) => setHerosDetails(data));
+        }
     }, [id]);
     return(
         <div>

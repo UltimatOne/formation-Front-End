@@ -4,6 +4,7 @@ import GetId from "../Fetch/GetId";
 import HerosDetails from "../../pages/herosDetails";
 import HerosListe from "../../pages/herosListe";
 import HerosEdit from "../../pages/herosEdit";
+import HerosAjout from "../../pages/herosAjout";
 
 
 
@@ -28,6 +29,10 @@ const routes: RouteObject[] = [
     {
         path: "/edit/:id",
         element: <HerosEdit/>
+    },
+    {
+        path: "/ajout",
+        element: <HerosAjout/>
     }
 ];
 
