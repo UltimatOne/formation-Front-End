@@ -18,7 +18,7 @@ const HerosLists: React.FC = () => {
         <Card key={hero.id} superHeros={hero} />
       ))}
       <Link to="/ajout">
-        <button>Enregistrer</button>
+        <button>Ajouter un héros</button>
       </Link>
     </div>
   );
