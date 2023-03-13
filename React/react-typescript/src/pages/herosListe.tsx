@@ -9,7 +9,8 @@ const HerosLists: React.FC = () => {
   const [herosList, setHerosList] = useState<SuperHeros[]>([]);
 
   useEffect(() => {
-    HeroService.getHeroes().then((data) => setHerosList(data));},[])
+    HeroService.getHeroes().then((data) => setHerosList(data));
+  }, []);
 
   return (
     <div className="heroList">

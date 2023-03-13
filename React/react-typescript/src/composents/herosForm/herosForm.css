@@ -17,6 +17,7 @@
     width: 15%;
     margin: auto;
     margin-top: 2%;
+    border-radius: 25px;
     background-color: black;
     color: white;
 }
