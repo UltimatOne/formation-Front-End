@@ -1,4 +1,4 @@
-let n1 = 8;
+let n1 = 10;
 let string1 = "";
 
 for (let i = 0; i <= n1; i++) {
@@ -8,7 +8,7 @@ for (let i = 0; i <= n1; i++) {
   string1 += "<br/>";
 }
 
-let n2 = 7;
+let n2 = 9;
 let string2 = "";
 
 for (let i1 = 0; i1 < n2; i1++) {
