@@ -1,7 +1,9 @@
 #saiyans{
     display: flex;
+    flex-direction: column;
     width: 100%;
-    background-color: black;
+    background-color: rgb(53, 52, 52);
     color: white;
+    margin-bottom: 1rem;
     
 }
