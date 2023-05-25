@@ -68,6 +68,8 @@ console.log (form);
 const div = document.createElement('div');
 //donne un nom à la div
 div.name = 'date';
+// donne une classe à la div
+div.className =  "essai";
 //value de div
 div.value = "";
 //bord arroundis pour div

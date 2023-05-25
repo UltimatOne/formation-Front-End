@@ -50,9 +50,11 @@ fizzbuzzPlus.append(lienFizzbuzzPlus);
 
 let conteneur = document.createElement('div')
 conteneur.id = 'conteneur';
-conteneur.style.width = '25%';
+conteneur.style.display = 'flex';
+conteneur.style.justifyContent = 'space-around',
+conteneur.style.width = '100%';
 conteneur.style.height = '85%';
-conteneur.style.margin = '2px'
+conteneur.style.marginTop = '160px';
 body.append(nav, conteneur);
 
 //carte 1
@@ -61,8 +63,9 @@ carte1.style.textAlign = 'center';
 carte1.id = 'carte1';
 carte1.style.background = "black";
 carte1.style.color = "white";
-carte1.style.width = "100%";
+carte1.style.width = "25%";
 carte1.style.height = "50%";
+carte1.style.margin = '0 2px';
 let span1Carte1 = document.createElement('span');
 carte1.appendChild(span1Carte1);
 let titreSpan1Carte1 = document.createElement('h1');
@@ -90,8 +93,9 @@ carte2.style.textAlign = 'center';
 carte2.id = 'carte2';
 carte2.style.background = "green";
 carte2.style.color = "white";
-carte2.style.width = "100%";
+carte2.style.width = "25%";
 carte2.style.height = "50%";
+carte2.style.margin = '0 2px';
 let span1Carte2 = document.createElement('span');
 carte2.appendChild(span1Carte2);
 let titreSpan1Carte2 = document.createElement('h1');
@@ -119,8 +123,9 @@ carte3.style.textAlign = 'center';
 carte3.id = 'carte3';
 carte3.style.background = "orange";
 carte3.style.color = "white";
-carte3.style.width = "100%";
+carte3.style.width = "25%";
 carte3.style.height = "50%";
+carte3.style.margin = '0 2px';
 let span1Carte3 = document.createElement('span');
 carte3.appendChild(span1Carte3);
 let titreSpan1Carte3 = document.createElement('h1');
@@ -148,8 +153,9 @@ carte4.style.textAlign = 'center';
 carte4.id = 'carte4';
 carte4.style.background = "purple";
 carte4.style.color = "white";
-carte4.style.width = "100%";
+carte4.style.width = "25%";
 carte4.style.height = "50%";
+carte4.style.margin = '0 2px';
 let span1Carte4 = document.createElement('span');
 carte4.appendChild(span1Carte4);
 let titreSpan1Carte4 = document.createElement('h1');
