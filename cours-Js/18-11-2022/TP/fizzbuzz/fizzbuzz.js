@@ -19,6 +19,3 @@ for (let i = 1; i < 16; i++) {
   else if (i % 3 == 0) console.log("Fizz");
   else console.log(i);
 }
-
-
-    
