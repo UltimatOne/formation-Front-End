@@ -1,7 +1,5 @@
 let root = document.querySelector('#root')
 let contenu = "";
-root.append(contenu);
-
 for (let i = 1; i < 16; i++) {
   if (i % 15 == 0) {
     contenu += "FizzBuzz\n";
@@ -21,8 +19,6 @@ for (let i = 1; i < 16; i++) {
   else if (i % 3 == 0) console.log("Fizz");
   else console.log(i);
 }
-
-
 
 
     
